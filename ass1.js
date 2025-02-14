@@ -119,16 +119,16 @@ const booksData = [
 
 
 // challenge 1
-const getGenre = booksData.filter(trueOnes);
+/*const getGenre = booksData.filter(trueOnes);
 
 function trueOnes(element) {
     return element.available === true;
 }
 
-console.log(getGenre);
+console.log(getGenre); */
 
 // challenge 2
-let num = Number(prompt("Enter a book number:"));
+ /*let num = Number(prompt("Enter book number:"));
 
 let c = booksData.filter(findIt);
 function findIt(element) {
@@ -154,15 +154,111 @@ console.log(averageRating);
 }
 else{
     console.log(`rating for given id is ${null}`);
-}
+} */
 
 // challenge 3
-naming="Robert C. Martin";
-let dd=booksData.filter(finding_author);
-function finding_author(element){
-   element.author['name']===naming;
+/*let names = prompt('Enter author name:');
+let find =booksData.filter(toDo);
+
+function toDo(element) {
+    return element.author.name === names ;
 }
-console.log('dd');
+
+console.log(find);   */
+
+
+// challenge 4
+
+/* let num1 = prompt('Enter publisher name:');
+let findP =booksData.filter(toDoPublisher);
+
+function toDoPublisher(element) {
+    return element.publisher.name === num1 ;
+}
+
+console.log(findP); */
+
+// challenge 5
+
+/* let multiple = prompt('Enter genre name:');
+
+let bookGenre = booksData.map(genreBook);
+
+function genreBook(element) {
+    for (let i = 0; i < element.genres.length; i++) {
+        if (element.genres[i] === multiple) {
+            return element.title;
+        }
+    }
+}
+console.log(bookGenre);   */
+
+// challenge 6
+
+/* let p = Number(prompt('Enter the price:'));
+
+let takePrice = booksData.filter(getPrice);
+
+function getPrice(element) {
+    return element.price.amount < p;
+    }
+
+let final = takePrice.map(titles);
+function titles(element) {
+    return element.title;
+}
+console.log(final);   */
+
+// challenge 10
+
+ /*let expensive = booksData.reduce(getBook);
+function getBook(a,e) {
+    if (a.price.amount < e.price.amount) {
+        a=e;
+    }
+    return a;
+}
+console.log(expensive.title);  */
+
+// challenge 7
+
+/* let r = Number(prompt('Enter the no  of reviews:'));
+let booksWithReview = booksData.filter(noOfReview);
+
+function noOfReview(element) {
+    return element.reviews.length>= r;
+}
+console.log(booksWithReview); */
+
+// challenge 9
+ /*let languagesIn = [ 'English','German'];
+let useSelect = booksData.filter(inLanguagess)
+function inLanguagess(element) {
+    for (let i = 0; i < element.languages.length; i++) {
+        for (let j = 0; j < languagesIn.length; j++) {
+            if (element.languages[i] === languagesIn[j]) {
+                return element;
+            }
+        }
+    }
+}
+console.log(useSelect);  */
+
+// challenge 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
